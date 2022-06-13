@@ -8,7 +8,7 @@
   "client": [
     "MixinDoubleSliderCallbacks",
     "MixinMinecraftMain",
-    "MixinSharedConstants",
+    "MixinSchemas",
     "MixinSliderWidget",
     "MixinWorldRenderer"
   ],
