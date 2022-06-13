@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "essentials",
+  "version": "${version}",
+  "name": "Essentials",
+  "description": "This mod fixes a lot of bugs and other things that are on mojangs `don't care` list.",
+  "authors": [
+    "Cxlina"
+  ],
+  "contact": {
+    "homepage": "http://celinadev.de/",
+    "sources": "https://github.com/cxlina/essentials/"
+  },
+  "license": "MIT",
+  "icon": "assets/essentials/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "de.celinadev.essentialsfabric.Main"
+    ]
+  },
+  "mixins": [
+    "essentials.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "1.19",
+    "java": ">=17"
+  }
+}
