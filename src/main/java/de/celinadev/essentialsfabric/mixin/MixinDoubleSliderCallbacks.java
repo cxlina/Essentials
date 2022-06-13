@@ -15,7 +15,6 @@ public class MixinDoubleSliderCallbacks {
 
     @Inject(method = "validate(Ljava/lang/Double;)Ljava/util/Optional;", at = @At("RETURN"), cancellable = true)
     public void essentials$validate(Double double_, CallbackInfoReturnable<Optional<Double>> cir) {
-        System.out.println(double_);
         cir.setReturnValue(double_ >= Double.MIN_VALUE && double_ <= Double.MAX_VALUE ? Optional.of(double_) : Optional.empty());
     }
 
