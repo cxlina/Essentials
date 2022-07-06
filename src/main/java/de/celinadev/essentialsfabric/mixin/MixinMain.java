@@ -7,10 +7,11 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(net.minecraft.client.main.Main.class)
-public class MixinMinecraftMain {
+public class MixinMain {
 
-    @Inject(method = "main", at = @At(value = "HEAD"))
-    private static void essentials$preInit(CallbackInfo ci) {
+    @Inject(method = "main", at = @At("HEAD"))
+    private static void essentials$preInit(String[] args, CallbackInfo ci) {
+        //This is only initialized that early, because some fixes need to be applied that early as well. For this, the Configuration needs to be initialized before that.
         Main.getInstance().preInit();
     }
 }

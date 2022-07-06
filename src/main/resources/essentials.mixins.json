@@ -4,13 +4,16 @@
   "package": "de.celinadev.essentialsfabric.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-  ],
-  "client": [
     "MixinDoubleSliderCallbacks",
-    "MixinMinecraftMain",
+    "MixinMain",
     "MixinSchemas",
     "MixinSliderWidget",
     "MixinWorldRenderer"
+  ],
+  "client": [
+    "MixinCapeFeatureRenderer",
+    "MixinGameRenderer",
+    "MixinTitleScreen"
   ],
   "injectors": {
     "defaultRequire": 1
