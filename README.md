@@ -26,3 +26,5 @@ If you always want the newest version (may be unstable), you can compile this mo
 - Then you'll get a compiled read-to-use jar-file inside `Imported Folder/build/libs/mod_version+game_version.jar`
 
 **NOTE: You won't get ANY support when using these jars, i don't have any control over code that you may have changed/compiled yourself.**
+
+**Also, when using a newer/older version than available on Modrinth, you'll get the Update-Prompt every restart! THIS IS NOT A BUG!!**
