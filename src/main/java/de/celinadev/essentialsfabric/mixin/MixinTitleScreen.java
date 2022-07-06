@@ -37,6 +37,8 @@ public abstract class MixinTitleScreen extends Screen {
                 e.printStackTrace();
                 System.exit(-1);
             }
+            System.out.println(this.latest);
+            System.out.println(FabricLoader.getInstance().getModContainer("essentials").get().getMetadata().getVersion().getFriendlyString());
             if (!this.latest.equals(FabricLoader.getInstance().getModContainer("essentials").get().getMetadata().getVersion().getFriendlyString())) {
                 MinecraftClient.getInstance().setScreen(new UpdateAvailableScreen(Text.of("Update Available!"), (TitleScreen) (Object) this));
             }

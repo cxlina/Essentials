@@ -24,8 +24,8 @@ public class Configuration {
         return file;
     }
 
-    public boolean isEnabled(String path) {
-        return this.file.getBoolean(path, true);
+    public boolean isEnabled(String path, boolean def) {
+        return this.file.getBoolean(path, def);
     }
 
     public void set(String path, Object value) {

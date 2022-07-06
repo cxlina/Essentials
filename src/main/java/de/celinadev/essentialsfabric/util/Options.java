@@ -13,16 +13,18 @@ public class Options {
     public boolean fixNetherFog;
     public boolean fixCapeStuttering;
     public boolean fixResourceReloadExploit;
+    public boolean enableGodArmorEnchantments;
 
     public Options() {
         this.ignoreUpdate = false;
         Configuration config = Main.getInstance().getConfig();
-        this.fixOptionValues = config.isEnabled("fixOptionValues");
-        this.fixDataFixer = config.isEnabled("fixDataFixer");
-        this.fixSliderSound = config.isEnabled("fixSliderSound");
-        this.fixNetherFog = config.isEnabled("fixNetherFog");
-        this.fixCapeStuttering = config.isEnabled("fixCapeStuttering");
-        this.fixResourceReloadExploit = config.isEnabled("fixResourceReloadExploit");
+        this.fixOptionValues = config.isEnabled("fixOptionValues", true);
+        this.fixDataFixer = config.isEnabled("fixDataFixer", true);
+        this.fixSliderSound = config.isEnabled("fixSliderSound", true);
+        this.fixNetherFog = config.isEnabled("fixNetherFog", true);
+        this.fixCapeStuttering = config.isEnabled("fixCapeStuttering", true);
+        this.fixResourceReloadExploit = config.isEnabled("fixResourceReloadExploit", true);
+        this.enableGodArmorEnchantments = config.isEnabled("enableGodArmorEnchantments", false);
     }
 
     public void saveDefaults() {
@@ -34,6 +36,7 @@ public class Options {
             config.getFile().addDefault("fixNetherFog", true);
             config.getFile().addDefault("fixCapeStuttering", true);
             config.getFile().addDefault("fixResourceReloadExploit", true);
+            config.getFile().addDefault("enableGodArmorEnchantments", false);
             config.getFile().save();
         } catch (IOException e) {
             e.printStackTrace();
