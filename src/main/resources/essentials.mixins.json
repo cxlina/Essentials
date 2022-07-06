@@ -13,6 +13,7 @@
   "client": [
     "MixinCapeFeatureRenderer",
     "MixinGameRenderer",
+    "MixinMinecraftClient",
     "MixinTitleScreen"
   ],
   "injectors": {

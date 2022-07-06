@@ -12,6 +12,7 @@ public class Options {
     public boolean fixSliderSound;
     public boolean fixNetherFog;
     public boolean fixCapeStuttering;
+    public boolean fixResourceReloadExploit;
 
     public Options() {
         this.ignoreUpdate = false;
@@ -21,6 +22,7 @@ public class Options {
         this.fixSliderSound = config.isEnabled("fixSliderSound");
         this.fixNetherFog = config.isEnabled("fixNetherFog");
         this.fixCapeStuttering = config.isEnabled("fixCapeStuttering");
+        this.fixResourceReloadExploit = config.isEnabled("fixResourceReloadExploit");
     }
 
     public void saveDefaults() {
@@ -31,6 +33,7 @@ public class Options {
             config.getFile().addDefault("fixSliderSound", true);
             config.getFile().addDefault("fixNetherFog", true);
             config.getFile().addDefault("fixCapeStuttering", true);
+            config.getFile().addDefault("fixResourceReloadExploit", true);
             config.getFile().save();
         } catch (IOException e) {
             e.printStackTrace();
