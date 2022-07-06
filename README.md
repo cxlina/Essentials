@@ -13,3 +13,16 @@ If they don't, you're on your own.
 
 
 This is a mod with Bugfixes and Un-Patches Mojang doesn't care about.
+
+-------------------------------------------------------
+
+**Compile Yourself:**
+
+If you always want the newest version (may be unstable), you can compile this mod from source:
+
+- go into some folder on your pc and run ```git clone https://github.com/cxlina/Essentials/``` (requires git installed on your pc. alternatively you can also click `code/download zip` on the github page and use the `Essentials-master` folder as the folder in the next step)
+- Open Intellij, and import the Folder that contains the build.gradle file.
+- Wait for everything to index/import, then double-press `ctrl`, type `gradle build`, and wait for it to finish.
+- Then you'll get a compiled read-to-use jar-file inside `Imported Folder/build/libs/mod_version+game_version.jar`
+
+**NOTE: You won't get ANY support when using these jars, i don't have any control over code that you may have changed/compiled yourself.**
