@@ -5,6 +5,9 @@ The answer is easy: NO.
 Why? Quilt is something i don't want to support myself. It's one of those "It exists just to exist" projects, where i don't see any reason for it to exist.
 In terms of development, there's no big changes from fabric, and all changes that exist don't make any sense in my opinion, and/or could easily be included in fabric. but no, they had to "reinvent the wheel".
 
+Also, their community is one of the most toxic ones i've ever seen. Reaching from simple insults to straight up hating on new developers about how their code is written.
+This isn't what i want. I want to have a community which will help you, instead of insult you for not knowing something.
+
 So in short: if my mods work on quilt, cool. you can obviously use them.
 If they don't, you're on your own.
 
